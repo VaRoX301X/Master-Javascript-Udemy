@@ -8,7 +8,7 @@ var correcto = false;
 do {
     var num1 = parseInt(prompt('Escribe un numero', 0));
     var num2 = parseInt(prompt('Escribe otro numero', 0));
-    if (num1 <= 0 || num2 <= 0 || num1 == NaN || num2 == NaN) {
+    if (num1 <= 0 || num2 <= 0 || isNaN(num1) || isNaN(num2) ) {
         alert('NUMEROS INCORRECTOS');
     } else {
         correcto = true;
